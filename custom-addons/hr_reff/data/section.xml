@@ -1,0 +1,17 @@
+<odoo>
+    <data noupdate="1">
+          <record id="section0" model="hr.section">
+            <field name="name">GENERAL AFFAIR</field>
+            <field name="parent_id">HRGA WAREHOUSE</field>
+          </record>
+          <record id="section1" model="hr.section">
+            <field name="name">HUMAN RESOURCES</field>
+            <field name="parent_id">HRGA WAREHOUSE</field>
+          </record>
+          <record id="section2" model="hr.section">
+            <field name="name">PRIVATE JAKARTA</field>
+            <field name="parent_id">HRGA WAREHOUSE</field>
+          </record>
+          
+    </data>
+</odoo>

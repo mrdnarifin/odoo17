@@ -1,0 +1,17 @@
+<odoo>
+    <data noupdate="1">
+          <record id="classification0" model="hr.classification">
+            <field name="name">CORE</field>
+            <field name="description">CORE</field>
+          </record>
+          <record id="classification1" model="hr.classification">
+            <field name="name">PRIVATE</field>
+            <field name="description">PRIVATE</field>
+          </record>
+          <record id="classification2" model="hr.classification">
+            <field name="name">SUPPORT</field>
+            <field name="description">SUPPORT</field>
+          </record>
+          
+    </data>
+</odoo>

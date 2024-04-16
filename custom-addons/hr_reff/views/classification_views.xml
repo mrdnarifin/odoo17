@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_classification_tree_view" model="ir.ui.view">
+            <field name="name">hr.classification.view.tree</field>
+            <field name="model">hr.classification</field>
+            <field name="arch" type="xml">
+                <tree string="Clasification">
+                    <field name="name" />
+                     <field name="description" />
+                </tree>
+            </field>
+        </record>
+        <record id="hr_classification_form_view" model="ir.ui.view">
+            <field name="name">hr.classification.view.form</field>
+            <field name="model">hr.classification</field>
+            <field name="arch" type="xml">
+                <form string="Clasification">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="description" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_classification_action" model="ir.actions.act_window">
+            <field name="name">Clasification</field>
+            <field name="res_model">hr.classification</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Job Classification
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+              id="menu_hr_classification_tree"
+              name="Classification"
+              action="hr_classification_action"
+              parent="hr.menu_config_employee"
+              sequence="8" />
+    </data>
+</odoo>

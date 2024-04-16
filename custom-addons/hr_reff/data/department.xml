@@ -1,0 +1,40 @@
+<odoo>
+    <data noupdate="1">
+          <record id="dep0" model="hr.department">
+            <field name="name">BOD</field>
+          </record>
+          <record id="dep1" model="hr.department">
+            <field name="name">PROJECT &amp; INFRASTRUCTURE</field>
+          </record>
+          <record id="dep2" model="hr.department">
+            <field name="name">PORT DATA CENTER</field>
+          </record>
+          <record id="dep3" model="hr.department">
+            <field name="name">KUD GM</field>
+          </record>
+          <record id="dep4" model="hr.department">
+            <field name="name">MOBILE PLANT</field>
+          </record>
+          <record id="dep5" model="hr.department">
+            <field name="name">FIXED PLANT</field>
+          </record>
+          <record id="dep6" model="hr.department">
+            <field name="name">POWER PLANT</field>
+          </record>
+          <record id="dep7" model="hr.department">
+            <field name="name">FAT &amp; LEGAL</field>
+          </record>
+          <record id="dep8" model="hr.department">
+            <field name="name">PORT OPERATION</field>
+          </record>
+          <record id="dep9" model="hr.department">
+            <field name="name">JHONLIN SECURITY SERVICE</field>
+          </record>
+          <record id="dep10" model="hr.department">
+            <field name="name">SHE</field>
+          </record>
+          <record id="dep11" model="hr.department">
+            <field name="name">HRGA &amp; WAREHOUSE</field>
+          </record>
+    </data>
+</odoo>

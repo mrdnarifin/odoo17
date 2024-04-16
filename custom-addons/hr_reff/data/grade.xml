@@ -1,0 +1,72 @@
+<odoo>
+    <data noupdate="1">
+          <record id="object0" model="hr.grade">
+            <field name="name">ADMIN</field>
+            <field name="description">ADMIN</field>
+          </record>
+          <record id="object1" model="hr.grade">
+            <field name="name">DIREKSI</field>
+            <field name="description">DIREKSI</field>
+          </record>
+          <record id="object2" model="hr.grade">
+            <field name="name">DIREKTUR</field>
+            <field name="description">Direktur</field>
+          </record>
+          <record id="object3" model="hr.grade">
+            <field name="name">DRIVER</field>
+            <field name="description">DRIVER</field>
+          </record>
+          <record id="object4" model="hr.grade">
+            <field name="name">ENGINEER</field>
+            <field name="description">ENGINEER</field>
+          </record>
+          <record id="object5" model="hr.grade">
+            <field name="name">GENERAL MANAGER</field>
+            <field name="description">GENERAL MANAGER</field>
+          </record>
+          <record id="object6" model="hr.grade">
+            <field name="name">HELPER</field>
+            <field name="description">HELPER</field>
+          </record>
+          <record id="object7" model="hr.grade">
+            <field name="name">MANAGER</field>
+            <field name="description">MANAGER</field>
+          </record>
+          <record id="object8" model="hr.grade">
+            <field name="name">NON KARYAWAN</field>
+            <field name="description">NON KARYAWAN</field>
+          </record>
+          <record id="object9" model="hr.grade">
+            <field name="name">OFFICER</field>
+            <field name="description">OFFICER</field>
+          </record>
+          <record id="object10" model="hr.grade">
+            <field name="name">OPERATOR</field>
+            <field name="description">OPERATOR</field>
+          </record>
+          <record id="object11" model="hr.grade">
+            <field name="name">SECURITY</field>
+            <field name="description">SECURITY</field>
+          </record>
+          <record id="object12" model="hr.grade">
+            <field name="name">SERVICES</field>
+            <field name="description">SERVICES</field>
+          </record>
+          <record id="object13" model="hr.grade">
+            <field name="name">SPECIALIST</field>
+            <field name="description">SPECIALIST</field>
+          </record>
+          <record id="object14" model="hr.grade">
+            <field name="name">SUPERINTENDENT</field>
+            <field name="description">SUPERINTENDENT</field>
+          </record>
+          <record id="object15" model="hr.grade">
+            <field name="name">SUPERVISOR</field>
+            <field name="description">SUPERVISOR</field>
+          </record>
+          <record id="object17" model="hr.grade">
+            <field name="name">TRANSPORT</field>
+            <field name="description">TRANSPORT</field>
+          </record>
+    </data>
+</odoo>
