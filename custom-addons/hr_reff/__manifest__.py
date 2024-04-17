@@ -23,6 +23,7 @@
         "data/cost_center.xml",
         "data/department.xml",
         "data/work_location.xml",
+        "views/employee_ext.xml",
     ],
     # only loaded in demonstration mode
     # "demo": [
