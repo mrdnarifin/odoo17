@@ -2,7 +2,7 @@
 
 <odoo>
 <data>
-<record id="view_hr_base_ext_form" model="ir.ui.view">
+  <record id="view_hr_base_ext_form" model="ir.ui.view">
       <field name="name">hr.base.ext.form</field>
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form"/>
@@ -11,28 +11,118 @@
             <field name="nik" />
             <field name="nik_ktp" />
           </xpath>
-          <xpath expr="//group[@name='emergency']" position="after">
-            <group string="Additional Information">
-                <field name="npwp" />
-                <field name="tgl_npwp" />
-                <field name="no_bpjs" />
-                <field name="no_bpjstk" />
-                <field name="gol_darah" />
-                <field name="agama" />
-                <field name="berat_badan" />
-                <field name="tinggi_badan" />
-                <field name="uk_baju" />
-                <field name="uk_celana" />
-                <field name="uk_sepatu" />
-            </group>
+          <xpath expr="//page[@name='personal_information']" position="after">
+            <page name="family_information" string="Family Information" groups="hr.group_hr_user">
+              <field name="family_ids" nolabel="1"/>
+            </page>
+          </xpath>
+          <xpath expr="//page[@name='family_information']" position="after">
+            <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
+              <group>
+                <group string="Additional Information">
+                    <field name="npwp" />
+                    <field name="tgl_npwp" />
+                    <field name="tgl_expired_npwp" />
+                    <field name="no_bpjs" />
+                    <field name="no_bpjstk" />
+                    <field name="no_kk" />
+                    <field name="tgl_terbit_kk" />
+                    <field name="tgl_terbit_ktp" />
+                    <field name="tgl_expired_ktp" />
+                    <field name="gol_darah" />
+                    <field name="agama" />
+                </group>
+                <group string="Social Information">
+                    <field name="tinggi_badan" />
+                    <field name="berat_badan" />
+                    <field name="uk_baju" />
+                    <field name="uk_celana" />
+                    <field name="uk_sepatu" />
+                    <field name="tiktok" />
+                    <field name="instagram" />
+                    <field name="twitter" />
+                    <field name="linkedin" />
+                </group>
+              </group>
+            </page>
           </xpath>
           <xpath expr="//field[@name='work_location_id']" position="after">
                 <field name="place_of_hire" />
                 <field name="point_of_origin" />
           </xpath>
-          
       </field>
   </record>
+  <record id="hr_family_tree_view" model="ir.ui.view">
+      <field name="name">hr.family.view.tree</field>
+      <field name="model">hr.family</field>
+      <field name="arch" type="xml">
+          <tree>
+              <field name="nik"/>
+              <field name="name" />
+              <field name="relation" />
+              <field name="gender" />
+              <field name="no_bpjs" />
+              <field name="faskes1" />
+              <field name="faskes_gigi" />
+              <field name="kelas_rawat" />
+              <field name="active" />
+          </tree>
+      </field>
+  </record>
+  <record id="hr_family_form_view" model="ir.ui.view">
+      <field name="name">hr.family.view.form</field>
+      <field name="model">hr.family</field>
+      <field name="arch" type="xml">
+          <form string="Family">
+              <sheet>
+                  <group>
+                      <group>
+                          <field name="nik" placeholder="3576447103910003" />
+                          <field name="name" placeholder="John Smith" />
+                          <field name="relation" placeholder="" />
+                          <field name="gender" placeholder="" />
+                          <field name="phone" placeholder="08930301287" />
+                          <field name="no_bpjs" placeholder="0106010100001" />
+                          <field name="kode_faskes1" placeholder="0137R060 " />
+                          <field name="faskes1" placeholder="RS Medirossa" />
+                          <field name="faskes_gigi" />
+                          <field name="kelas_rawat" />
+                          <field name="active" />
+                      </group>
+                      <group>
+                          <field name="address" placeholder="Jl. Raya Kodeco KM 1" />
+                          <field name="rt" placeholder="001" />
+                          <field name="rw" placeholder="003" />
+                          <field name="country_id" />
+                          <field name="marital_status" />
+                          <field name="marital_date" />
+                          <field name="an_employee" />
+                          <field name="unit_usaha" invisible="an_employee != True" />
+                          <field name="nik_emp" invisible="an_employee != True"  />
+                      </group>
+                  </group>
+              </sheet>
+          </form>
+      </field>
+  </record>
+  <record id="hr_family_action" model="ir.actions.act_window">
+            <field name="name">Families</field>
+            <field name="res_model">hr.family</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new family
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+              id="menu_hr_family_tree"
+              name="Families"
+              action="hr_family_action"
+              groups="hr.group_hr_user"
+              parent="hr.menu_hr_employee_payroll"
+              sequence="4" />
 </data>
 
 </odoo>

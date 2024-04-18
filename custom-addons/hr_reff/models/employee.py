@@ -6,16 +6,18 @@ class HrEmployeePrivate(models.Model):
 
     nik = fields.Char(
         string="NIK",
-        required=True,
+        required=False,
     )
     nik_ktp = fields.Char(
         string="NIK KTP",
-        required=True,
+        required=False,
     )
+    family_ids = fields.Many2many("hr.family", "id")
     npwp = fields.Char(string="NPWP", required=False)
-    tgl_npwp = fields.Char(string="Tanggal NPWP", required=False)
-    no_bpjs = fields.Char(string="No BPJS", required=False)
-    no_bpjstk = fields.Char(string="No BPJS TK", required=False)
+    tgl_npwp = fields.Date(string="Tgl NPWP", required=False)
+    tgl_expired_npwp = fields.Date(string="Tgl Expired NPWP", required=False)
+    no_bpjs = fields.Char(string="No. BPJS", required=False)
+    no_bpjstk = fields.Char(string="No. BPJS TK", required=False)
     place_of_hire = fields.Char(string="Place of Hire", required=False)
     point_of_origin = fields.Char(string="Point of Origin", required=False)
     gol_darah = fields.Selection(
@@ -55,31 +57,12 @@ class HrEmployeePrivate(models.Model):
         ],
     )
 
-    uk_celana = fields.Selection(
-        string="Ukuran Celana",
-        selection=[
-            ("20", "20"),
-            ("21", "21"),
-            ("22", "22"),
-            ("23", "23"),
-            ("24", "24"),
-            ("25", "25"),
-            ("26", "26"),
-            ("27", "27"),
-            ("28", "28"),
-            ("29", "29"),
-            ("30", "30"),
-            ("31", "31"),
-            ("32", "32"),
-            ("33", "33"),
-            ("34", "34"),
-            ("35", "35"),
-            ("36", "36"),
-            ("37", "37"),
-            ("38", "38"),
-            ("39", "37"),
-        ],
-    )
+    sizes = []
+
+    for i in range(20, 41):
+        sizes.append(["{}".format(i), "{}".format(i)])
+
+    uk_celana = fields.Selection(string="Ukuran Celana", selection=sizes)
     uk_sepatu = fields.Selection(
         string="Ukuran Sepatu",
         selection=[
@@ -103,3 +86,12 @@ class HrEmployeePrivate(models.Model):
             ("13", "13"),
         ],
     )
+
+    no_kk = fields.Char(string="No. KK", required=False)
+    tgl_terbit_kk = fields.Date(string="Tgl Terbit KK", required=False)
+    tgl_terbit_ktp = fields.Date(string="Tgl Terbit KTP", required=False)
+    tgl_expired_ktp = fields.Date(string="Tgl Expired KTP", required=False)
+    tiktok = fields.Char(string="Tiktok", required=False)
+    instagram = fields.Char(string="Instagram", required=False)
+    twitter = fields.Char(string="Twitter", required=False)
+    linkedin = fields.Char(string="Linkedin", required=False)

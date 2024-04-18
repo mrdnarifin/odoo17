@@ -98,7 +98,6 @@
         </field>
     </record>
 
-
     <record id="hr_employee_public_view_form_inherit" model="ir.ui.view">
         <field name="name">hr.employee.public.view.form.inherit.resume</field>
         <field name="model">hr.employee.public</field>

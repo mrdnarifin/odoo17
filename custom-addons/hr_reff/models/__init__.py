@@ -6,3 +6,5 @@ from . import classification
 from . import cost_center
 from . import section
 from . import employee
+
+from . import family
