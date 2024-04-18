@@ -12,7 +12,8 @@ class HrEmployeePrivate(models.Model):
         string="NIK KTP",
         required=False,
     )
-    family_ids = fields.Many2many("hr.family", "id")
+    family_ids = fields.One2many("hr.family", "employee_id")
+
     npwp = fields.Char(string="NPWP", required=False)
     tgl_npwp = fields.Date(string="Tgl NPWP", required=False)
     tgl_expired_npwp = fields.Date(string="Tgl Expired NPWP", required=False)

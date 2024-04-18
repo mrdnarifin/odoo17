@@ -65,6 +65,7 @@
               <field name="faskes1" />
               <field name="faskes_gigi" />
               <field name="kelas_rawat" />
+              <field name="employee_id" />
               <field name="active" />
           </tree>
       </field>

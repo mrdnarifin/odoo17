@@ -5,7 +5,7 @@ class Family(models.Model):
     _name = "hr.family"
     _description = "Family of an employee"
 
-    # emp_id = fields.Many2one("hr.employee", string="Employee")
+    employee_id = fields.Many2one("hr.employee", string="Employee")
     name = fields.Char(string="Nama Lengkap", required=True)
     nik = fields.Char(string="NIK KTP", required=False)
 
