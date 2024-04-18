@@ -35,9 +35,9 @@ class Family(models.Model):
     rt = fields.Char(string="RT", required=False)
     rw = fields.Char(string="RW", required=False)
     no_bpjs = fields.Char(string="No. BPJS", required=True)
-    kode_faskes1 = fields.Char(string="Kode Faskes 1", required=True)
-    faskes1 = fields.Char(string="Faskes 1", required=True)
-    kelas_rawat = fields.Char(string="Kelas Rawat", required=True)
+    kode_faskes1 = fields.Char(string="Kode Faskes 1", required=False)
+    faskes1 = fields.Char(string="Faskes 1", required=False)
+    kelas_rawat = fields.Char(string="Kelas Rawat", required=False)
     kode_faskes_gigi = fields.Char(string="Kode Faskes Dokter Gigi", required=False)
     faskes_gigi = fields.Char(string="Faskes Dokter Gigi", required=False)
     country_id = fields.Many2one(
