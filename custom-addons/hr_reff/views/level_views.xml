@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_level_tree_view" model="ir.ui.view">
+            <field name="name">hr.level.view.tree</field>
+            <field name="model">hr.level</field>
+            <field name="arch" type="xml">
+                <tree string="Level">
+                    <field name="name" />
+                     <field name="description" />
+                </tree>
+            </field>
+        </record>
+        <record id="hr_level_form_view" model="ir.ui.view">
+            <field name="name">hr.level.view.form</field>
+            <field name="model">hr.level</field>
+            <field name="arch" type="xml">
+                <form string="Level">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="description" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_level_action" model="ir.actions.act_window">
+            <field name="name">Levels</field>
+            <field name="res_model">hr.level</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Job Level
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+              id="menu_hr_level_tree"
+              name="Level"
+              action="hr_level_action"
+              parent="hr.menu_config_employee"
+              sequence="8" />
+    </data>
+</odoo>

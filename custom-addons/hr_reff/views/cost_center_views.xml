@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_cost_center_tree_view" model="ir.ui.view">
+            <field name="name">hr.cost_center.view.tree</field>
+            <field name="model">hr.cost_center</field>
+            <field name="arch" type="xml">
+                <tree string="Cost Center">
+                    <field name="name" />
+                     <field name="description" />
+                </tree>
+            </field>
+        </record>
+        <record id="hr_cost_center_form_view" model="ir.ui.view">
+            <field name="name">hr.cost_center.view.form</field>
+            <field name="model">hr.cost_center</field>
+            <field name="arch" type="xml">
+                <form string="Cost Center">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" />
+                                <field name="description" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="hr_cost_center_action" model="ir.actions.act_window">
+            <field name="name">Cost Centers</field>
+            <field name="res_model">hr.cost_center</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create a new Cost Center
+                </p>
+            </field>
+        </record>
+
+        <menuitem
+              id="menu_hr_cost_center_tree"
+              name="Cost Centers"
+              action="hr_cost_center_action"
+              parent="hr.menu_config_employee"
+              sequence="5" />
+    </data>
+</odoo>

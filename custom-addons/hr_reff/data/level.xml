@@ -1,0 +1,17 @@
+<odoo>
+    <data noupdate="1">
+          <record id="level0" model="hr.level">
+            <field name="name">Staff</field>
+            <field name="description">Staff</field>
+          </record>
+          <record id="level1" model="hr.level">
+            <field name="name">Non Staff</field>
+            <field name="description">Non Staff</field>
+          </record>
+          <record id="level2" model="hr.level">
+            <field name="name">Non Employee</field>
+            <field name="description">Non Employee</field>
+          </record>
+          
+    </data>
+</odoo>

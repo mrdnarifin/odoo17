@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <menuitem id="protag_model_menu_action" action="estate_property_tag_action" name="Property Tags" parent="property_type_setting_menu"/>
+    </data>
+</odoo>

@@ -1,0 +1,189 @@
+<odoo>
+    <data noupdate="1">
+          <record id="hr_department1" model="hr.department">
+              <field name="name">HRGA &amp; Warehouse</field>
+          </record>
+          <record id="section0" model="hr.section">
+            <field name="name">General Affair</field>
+            <field name="parent_id" ref="hr_department1" />
+          </record>
+          <record id="section1" model="hr.section">
+            <field name="name">Human Resources</field>
+            <field name="parent_id" ref="hr_department1" />
+          </record>
+          <record id="section2" model="hr.section">
+            <field name="name">Private Jakarta</field>
+            <field name="parent_id" ref="hr_department1" />
+          </record>
+          <record id="section3" model="hr.section">
+            <field name="name">Warehouse &amp; Fuel</field>
+            <field name="parent_id" ref="hr_department1" />
+          </record>
+          <record id="section4" model="hr.section">
+            <field name="name">Iconic</field>
+            <field name="parent_id" ref="hr_department1" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department2" model="hr.department">
+              <field name="name">SHE</field>
+          </record>
+          <record id="section5" model="hr.section">
+            <field name="name">Health</field>
+            <field name="parent_id" ref="hr_department2" />
+          </record>
+          <record id="section6" model="hr.section">
+            <field name="name">Environmental</field>
+            <field name="parent_id" ref="hr_department2" />
+          </record>
+          <record id="section7" model="hr.section">
+            <field name="name">Safety</field>
+            <field name="parent_id" ref="hr_department2" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department3" model="hr.department">
+              <field name="name">Port Operation</field>
+          </record>
+          <record id="section8" model="hr.section">
+            <field name="name">Operation &amp; Warehouse</field>
+            <field name="parent_id" ref="hr_department3" />
+          </record>
+          <record id="section9" model="hr.section">
+            <field name="name">Infrastructure</field>
+            <field name="parent_id" ref="hr_department3" />
+          </record>
+          <record id="section10" model="hr.section">
+            <field name="name">Operation</field>
+            <field name="parent_id" ref="hr_department3" />
+          </record>
+          <record id="section11" model="hr.section">
+            <field name="name">Data Center</field>
+            <field name="parent_id" ref="hr_department3" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department4" model="hr.department">
+              <field name="name">FAT &amp; Legal</field>
+          </record>
+          <record id="section12" model="hr.section">
+            <field name="name">Accounting &amp; Tax</field>
+            <field name="parent_id" ref="hr_department4" />
+          </record>
+          <record id="section13" model="hr.section">
+            <field name="name">Finance</field>
+            <field name="parent_id" ref="hr_department4" />
+          </record>
+          <record id="section14" model="hr.section">
+            <field name="name">Legal</field>
+            <field name="parent_id" ref="hr_department4" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department5" model="hr.department">
+              <field name="name">Power Plant</field>
+          </record>
+          <record id="section16" model="hr.section">
+            <field name="name">Warehouse &amp; Fuel</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section17" model="hr.section">
+            <field name="name">Human Resources</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section18" model="hr.section">
+            <field name="name">Safety</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section19" model="hr.section">
+            <field name="name">Power Plant Utility</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section20" model="hr.section">
+            <field name="name">General Affair</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section21" model="hr.section">
+            <field name="name">Power Plant Maintenance</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record><record id="section2" model="hr.section">
+            <field name="name">Power Plant Distribution</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+          <record id="section22" model="hr.section">
+            <field name="name">Power Plant Operation</field>
+            <field name="parent_id" ref="hr_department5" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department6" model="hr.department">
+              <field name="name">Jhonlin Security Service</field>
+          </record>
+          <record id="section23" model="hr.section">
+            <field name="name">Jhonlin Security Service</field>
+            <field name="parent_id" ref="hr_department6" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department7" model="hr.department">
+              <field name="name">Fixed Plant</field>
+          </record>
+          <record id="section24" model="hr.section">
+            <field name="name">Fixed Plant</field>
+            <field name="parent_id" ref="hr_department7" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department8" model="hr.department">
+              <field name="name">Mobile Plant</field>
+          </record>
+          <record id="section25" model="hr.section">
+            <field name="name">Mobile Plant</field>
+            <field name="parent_id" ref="hr_department8" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department9" model="hr.department">
+              <field name="name">KUD GM</field>
+          </record>
+          <record id="section26" model="hr.section">
+            <field name="name">KUD GM</field>
+            <field name="parent_id" ref="hr_department9" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department10" model="hr.department">
+              <field name="name">BOD</field>
+          </record>
+          <record id="section27" model="hr.section">
+            <field name="name">BOD</field>
+            <field name="parent_id" ref="hr_department10" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department11" model="hr.department">
+              <field name="name">Port Data Center</field>
+          </record>
+          <record id="section28" model="hr.section">
+            <field name="name">Data Center</field>
+            <field name="parent_id" ref="hr_department11" />
+          </record>
+          <record id="section29" model="hr.section">
+            <field name="name">Port Maintenance</field>
+            <field name="parent_id" ref="hr_department11" />
+          </record>
+    </data>
+    <data noupdate="1">
+          <record id="hr_department12" model="hr.department">
+              <field name="name">Project &amp; Infrastructure</field>
+          </record>
+          <record id="section30" model="hr.section">
+            <field name="name">Safety</field>
+            <field name="parent_id" ref="hr_department12" />
+          </record>
+          <record id="section31" model="hr.section">
+            <field name="name">Project</field>
+            <field name="parent_id" ref="hr_department12" />
+          </record>
+    </data>
+</odoo>
