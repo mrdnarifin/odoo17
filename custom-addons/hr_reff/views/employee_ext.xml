@@ -9,7 +9,6 @@
       <field name="arch" type="xml">
           <xpath expr="//field[@name='mobile_phone']" position="before">
             <field name="nik" />
-            <field name="nik_ktp" />
           </xpath>
           <xpath expr="//page[@name='personal_information']" position="after">
             <page name="family_information" string="Family Information" groups="hr.group_hr_user">
@@ -20,24 +19,28 @@
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
                 <group string="Additional Information">
+                    <field name="nik_ktp" />
+                    <field name="tgl_terbit_ktp" />
+                    <field name="tgl_expired_ktp" />
+                    <field name="tgl_terbit_kk" />
                     <field name="npwp" />
                     <field name="tgl_npwp" />
                     <field name="tgl_expired_npwp" />
+
                     <field name="no_bpjs" />
                     <field name="no_bpjstk" />
                     <field name="no_kk" />
-                    <field name="tgl_terbit_kk" />
-                    <field name="tgl_terbit_ktp" />
-                    <field name="tgl_expired_ktp" />
                     <field name="gol_darah" />
                     <field name="agama" />
                 </group>
-                <group string="Social Information">
+                <group string="Personal Information">
+                    
                     <field name="tinggi_badan" />
                     <field name="berat_badan" />
                     <field name="uk_baju" />
                     <field name="uk_celana" />
                     <field name="uk_sepatu" />
+                    <separator name="has_social" string="Social Information"/>
                     <field name="tiktok" />
                     <field name="instagram" />
                     <field name="twitter" />
@@ -75,7 +78,7 @@
       <field name="model">hr.family</field>
       <field name="arch" type="xml">
           <form string="Family">
-              <sheet>
+              <sheet>                          
                   <group>
                       <group>
                           <field name="nik" placeholder="3576447103910003" />
@@ -106,7 +109,7 @@
           </form>
       </field>
   </record>
-  <record id="hr_family_action" model="ir.actions.act_window">
+  <!-- <record id="hr_family_action" model="ir.actions.act_window">
             <field name="name">Families</field>
             <field name="res_model">hr.family</field>
             <field name="view_mode">tree,form</field>
@@ -123,7 +126,7 @@
               action="hr_family_action"
               groups="hr.group_hr_user"
               parent="hr.menu_hr_employee_payroll"
-              sequence="4" />
+              sequence="4" /> -->
 </data>
 
 </odoo>

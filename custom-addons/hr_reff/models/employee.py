@@ -16,8 +16,8 @@ class HrEmployeePrivate(models.Model):
     sims_ids = fields.One2many("hr.employee.sim", "employee_id")
 
     npwp = fields.Char(string="NPWP", required=False)
-    tgl_npwp = fields.Date(string="Tgl NPWP", required=False)
-    tgl_expired_npwp = fields.Date(string="Tgl Expired NPWP", required=False)
+    tgl_npwp = fields.Date(string="Tanggal NPWP", required=False)
+    tgl_expired_npwp = fields.Date(string="Tanggal Expired NPWP", required=False)
     no_bpjs = fields.Char(string="No. BPJS", required=False)
     no_bpjstk = fields.Char(string="No. BPJS TK", required=False)
 
@@ -115,9 +115,9 @@ class HrEmployeePrivate(models.Model):
             ("TK/4", "TK/4"),
         ],
     )
-    tgl_terbit_kk = fields.Date(string="Tgl Terbit KK", required=False)
-    tgl_terbit_ktp = fields.Date(string="Tgl Terbit KTP", required=False)
-    tgl_expired_ktp = fields.Date(string="Tgl Expired KTP", required=False)
+    tgl_terbit_kk = fields.Date(string="Tanggal Terbit KK", required=False)
+    tgl_terbit_ktp = fields.Date(string="Tanggal Terbit KTP", required=False)
+    tgl_expired_ktp = fields.Date(string="Tanggal Expired KTP", required=False)
     tiktok = fields.Char(string="Tiktok", required=False)
     instagram = fields.Char(string="Instagram", required=False)
     twitter = fields.Char(string="Twitter", required=False)
