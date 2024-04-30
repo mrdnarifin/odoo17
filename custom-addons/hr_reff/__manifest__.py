@@ -22,7 +22,6 @@
         "data/level.xml",
         "data/classification.xml",
         "data/cost_center.xml",
-        "data/department.xml",
         "data/work_location.xml",
         "views/employee_ext.xml",
         "data/section.xml",

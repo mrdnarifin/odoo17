@@ -20,7 +20,6 @@ class HrEmployeePrivate(models.Model):
     tgl_expired_npwp = fields.Date(string="Tanggal Expired NPWP", required=False)
     no_bpjs = fields.Char(string="No. BPJS", required=False)
     no_bpjstk = fields.Char(string="No. BPJS TK", required=False)
-
     jenis_cuti = fields.Selection(
         string="Jenis Cuti",
         required=False,
@@ -100,7 +99,7 @@ class HrEmployeePrivate(models.Model):
 
     no_kk = fields.Char(string="No. KK", required=False)
     marital_status = fields.Selection(
-        string="Marital Status",
+        string="Marital Type",
         selection=[
             ("K/0", "K/0"),
             ("K/1", "K/1"),
@@ -118,6 +117,8 @@ class HrEmployeePrivate(models.Model):
     tgl_terbit_kk = fields.Date(string="Tanggal Terbit KK", required=False)
     tgl_terbit_ktp = fields.Date(string="Tanggal Terbit KTP", required=False)
     tgl_expired_ktp = fields.Date(string="Tanggal Expired KTP", required=False)
+    tgl_menikah = fields.Date(string="Marital Date", required=False)
+    tempat_menikah = fields.Char(string="Marital Place", required=False)
     tiktok = fields.Char(string="Tiktok", required=False)
     instagram = fields.Char(string="Instagram", required=False)
     twitter = fields.Char(string="Twitter", required=False)

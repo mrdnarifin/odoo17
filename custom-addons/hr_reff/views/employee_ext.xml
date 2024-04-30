@@ -15,7 +15,11 @@
               <field name="family_ids" nolabel="1"/>
             </page>
           </xpath>
-          <xpath expr="//page[@name='family_information']" position="after">
+          <xpath expr="//field[@name='children']" position="after">
+            <field name="tgl_menikah" />
+            <field name="tempat_menikah" />
+          </xpath>
+          <xpath expr="//page[@name='family_information']" position="before">
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
                 <group string="Additional Information">
@@ -26,7 +30,7 @@
                     <field name="npwp" />
                     <field name="tgl_npwp" />
                     <field name="tgl_expired_npwp" />
-
+ 
                     <field name="no_bpjs" />
                     <field name="no_bpjstk" />
                     <field name="no_kk" />
