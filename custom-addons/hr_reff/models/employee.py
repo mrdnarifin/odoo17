@@ -4,10 +4,7 @@ from odoo import models, fields, api
 class HrEmployeePrivate(models.Model):
     _inherit = ["hr.employee"]
 
-    nik = fields.Char(
-        string="NIK",
-        required=False,
-    )
+    nik = fields.Char(string="NIK", required=False, compute="_compute_auto_nik")
     nik_ktp = fields.Char(
         string="NIK KTP",
         required=False,
@@ -123,3 +120,8 @@ class HrEmployeePrivate(models.Model):
     instagram = fields.Char(string="Instagram", required=False)
     twitter = fields.Char(string="Twitter", required=False)
     linkedin = fields.Char(string="Linkedin", required=False)
+
+    # @api.depends("nik_ktp")
+    def _compute_auto_nik(self):
+        for record in self:
+            record.nik = "11218728171"
