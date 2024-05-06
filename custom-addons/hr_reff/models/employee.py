@@ -14,6 +14,7 @@ class HrEmployeePrivate(models.Model):
     )
     family_ids = fields.One2many("hr.family", "employee_id")
 <<<<<<< HEAD
+<<<<<<< HEAD
     sims_ids = fields.One2many("hr.employee.sim", "employee_id")
 
     npwp = fields.Char(string="NPWP", required=False)
@@ -30,12 +31,17 @@ class HrEmployeePrivate(models.Model):
         ],
     )
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 
     npwp = fields.Char(string="NPWP", required=False)
     tgl_npwp = fields.Date(string="Tgl NPWP", required=False)
     tgl_expired_npwp = fields.Date(string="Tgl Expired NPWP", required=False)
     no_bpjs = fields.Char(string="No. BPJS", required=False)
     no_bpjstk = fields.Char(string="No. BPJS TK", required=False)
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
     place_of_hire = fields.Char(string="Place of Hire", required=False)
     point_of_origin = fields.Char(string="Point of Origin", required=False)
@@ -108,6 +114,7 @@ class HrEmployeePrivate(models.Model):
 
     no_kk = fields.Char(string="No. KK", required=False)
 <<<<<<< HEAD
+<<<<<<< HEAD
     marital_status = fields.Selection(
         string="Marital Type",
         selection=[
@@ -129,6 +136,11 @@ class HrEmployeePrivate(models.Model):
     tgl_expired_ktp = fields.Date(string="Tanggal Expired KTP", required=False)
     tgl_menikah = fields.Date(string="Marital Date", required=False)
     tempat_menikah = fields.Char(string="Marital Place", required=False)
+=======
+    tgl_terbit_kk = fields.Date(string="Tgl Terbit KK", required=False)
+    tgl_terbit_ktp = fields.Date(string="Tgl Terbit KTP", required=False)
+    tgl_expired_ktp = fields.Date(string="Tgl Expired KTP", required=False)
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
     tgl_terbit_kk = fields.Date(string="Tgl Terbit KK", required=False)
     tgl_terbit_ktp = fields.Date(string="Tgl Terbit KTP", required=False)

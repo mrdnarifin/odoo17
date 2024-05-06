@@ -2,6 +2,7 @@
     <data noupdate="1">
           <record id="object0" model="hr.grade">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">Admin</field>
             <field name="description">Admin</field>
           </record>
@@ -69,6 +70,8 @@
             <field name="name">Transport</field>
             <field name="description">Transport</field>
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="name">ADMIN</field>
             <field name="description">ADMIN</field>
           </record>
@@ -135,6 +138,9 @@
           <record id="object17" model="hr.grade">
             <field name="name">TRANSPORT</field>
             <field name="description">TRANSPORT</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
     </data>

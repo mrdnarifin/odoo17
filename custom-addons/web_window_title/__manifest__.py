@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "license": "LGPL-3",
     "name": "Web Window Title",
     "summary": "The custom web window title",
@@ -29,6 +30,8 @@
     "application": False,
 }
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
     'license': 'LGPL-3',
     'name': "Web Window Title",
     'summary': "The custom web window title",
@@ -55,5 +58,9 @@
     'installable': True,
     'auto_install': False,
     'application': False,
+<<<<<<< HEAD
+}
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 }
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

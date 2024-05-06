@@ -2,6 +2,7 @@
 
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     'name': 'Odoo 17 Accounting',
     'version': '2.0.1',
     'category': 'Accounting',
@@ -45,6 +46,8 @@
 }
 
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
     "name": "Odoo 17 Accounting",
     "version": "2.0.1",
     "category": "Accounting",
@@ -86,4 +89,7 @@
     "application": True,
     "images": ["static/description/banner.gif"],
 }
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

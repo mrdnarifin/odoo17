@@ -2,6 +2,7 @@
     <data noupdate="1">
           <record id="cost0" model="hr.cost_center">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">BUP Batu Ampar</field>
             <field name="description">BUP Batu Ampar</field>
           </record>
@@ -61,6 +62,8 @@
             <field name="name">Power Plant 3,5 MW</field>
             <field name="description">Power Plant 3,5 MW</field>
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="name">BUP BATU AMPAR</field>
             <field name="description">BUP BATU AMPAR</field>
           </record>
@@ -119,6 +122,9 @@
           <record id="cost14" model="hr.cost_center">
             <field name="name">POWER PLANT 3,5 MW</field>
             <field name="description">POWER PLANT 3,5 MW</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
           

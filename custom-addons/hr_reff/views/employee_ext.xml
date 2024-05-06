@@ -10,6 +10,10 @@
           <xpath expr="//field[@name='mobile_phone']" position="before">
             <field name="nik" />
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            <field name="nik_ktp" />
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
             <field name="nik_ktp" />
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
@@ -19,6 +23,7 @@
               <field name="family_ids" nolabel="1"/>
             </page>
           </xpath>
+<<<<<<< HEAD
 <<<<<<< HEAD
           <xpath expr="//field[@name='children']" position="after">
             <field name="tgl_menikah" />
@@ -45,6 +50,8 @@
                 <group string="Personal Information">
                     
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           <xpath expr="//page[@name='family_information']" position="after">
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
@@ -62,6 +69,9 @@
                     <field name="agama" />
                 </group>
                 <group string="Social Information">
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
                     <field name="tinggi_badan" />
                     <field name="berat_badan" />
@@ -69,7 +79,10 @@
                     <field name="uk_celana" />
                     <field name="uk_sepatu" />
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <separator name="has_social" string="Social Information"/>
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
                     <field name="tiktok" />
@@ -110,7 +123,11 @@
       <field name="arch" type="xml">
           <form string="Family">
 <<<<<<< HEAD
+<<<<<<< HEAD
               <sheet>                          
+=======
+              <sheet>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
               <sheet>
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
@@ -145,7 +162,11 @@
       </field>
   </record>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <!-- <record id="hr_family_action" model="ir.actions.act_window">
+=======
+  <record id="hr_family_action" model="ir.actions.act_window">
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
   <record id="hr_family_action" model="ir.actions.act_window">
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
@@ -166,7 +187,11 @@
               groups="hr.group_hr_user"
               parent="hr.menu_hr_employee_payroll"
 <<<<<<< HEAD
+<<<<<<< HEAD
               sequence="4" /> -->
+=======
+              sequence="4" />
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
               sequence="4" />
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

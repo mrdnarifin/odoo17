@@ -6,7 +6,13 @@
       <field name="inherit_id" ref="hr.view_hr_job_form"/>
       <field name="arch" type="xml">
 <<<<<<< HEAD
+<<<<<<< HEAD
           <field name="department_id" domain="[('parent_id', '=', department_id)]" position="replace" />
+=======
+          <xpath expr="//field[@name='department_id']" position="after">
+            <field name="section" />
+          </xpath>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
           <xpath expr="//field[@name='department_id']" position="after">
             <field name="section" />

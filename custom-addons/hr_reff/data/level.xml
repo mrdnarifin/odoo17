@@ -2,6 +2,7 @@
     <data noupdate="1">
           <record id="level0" model="hr.level">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">Staff</field>
             <field name="description">Staff</field>
           </record>
@@ -13,6 +14,8 @@
             <field name="name">Non Employee</field>
             <field name="description">Non Employee</field>
 =======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="name">STAFF</field>
             <field name="description">STAFF</field>
           </record>
@@ -23,6 +26,9 @@
           <record id="level2" model="hr.level">
             <field name="name">NON EMPLOYEE</field>
             <field name="description">NON EMPLOYEE</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
           

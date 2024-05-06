@@ -447,6 +447,7 @@ class HrEmployeePrivate(models.Model):
         if self.check_access_rights("read", raise_exception=False):
             return super().get_view(view_id, view_type, **options)
         return self.env["hr.employee.public"].get_view(view_id, view_type, **options)
+<<<<<<< HEAD
 
     @api.model
     def get_views(self, views, options=None):
@@ -455,6 +456,8 @@ class HrEmployeePrivate(models.Model):
         res = self.env['hr.employee.public'].get_views(views, options)
         res['models'].update({'hr.employee': res['models']['hr.employee.public']})
         return res
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 
     @api.model
     def _search(self, domain, offset=0, limit=None, order=None, access_rights_uid=None):

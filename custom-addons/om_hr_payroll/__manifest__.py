@@ -2,7 +2,11 @@
     'name': 'Odoo 17 HR Payroll',
     'category': 'Generic Modules/Human Resources',
 <<<<<<< HEAD
+<<<<<<< HEAD
     'version': '17.0.1.0.4',
+=======
+    'version': '17.0.1.0.3',
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
     'version': '17.0.1.0.3',
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

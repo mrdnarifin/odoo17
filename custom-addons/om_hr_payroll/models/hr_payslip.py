@@ -114,8 +114,12 @@ class HrPayslip(models.Model):
             template_id = False
         try:
 <<<<<<< HEAD
+<<<<<<< HEAD
             compose_form_id = ir_model_data._xmlid_lookup('mail.email_compose_message_wizard_form')[1]
 
+=======
+            compose_form_id = ir_model_data._xmlid_lookup('mail.email_compose_message_wizard_form')[2]
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
             compose_form_id = ir_model_data._xmlid_lookup('mail.email_compose_message_wizard_form')[2]
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
@@ -124,7 +128,11 @@ class HrPayslip(models.Model):
         ctx = {
             'default_model': 'hr.payslip',
 <<<<<<< HEAD
+<<<<<<< HEAD
             'default_res_ids': self.ids,
+=======
+            'default_res_id': self.ids[0],
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
             'default_res_id': self.ids[0],
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

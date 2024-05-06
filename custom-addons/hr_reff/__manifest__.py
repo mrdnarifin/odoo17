@@ -18,7 +18,10 @@
         "views/cost_center_views.xml",
         "views/section_views.xml",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "views/sim_views.xml",
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
 >>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
         "data/grade.xml",
@@ -26,9 +29,15 @@
         "data/classification.xml",
         "data/cost_center.xml",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "data/work_location.xml",
         "views/employee_ext.xml",
         "data/section.xml",
+=======
+        "data/department.xml",
+        "data/work_location.xml",
+        "views/employee_ext.xml",
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 =======
         "data/department.xml",
         "data/work_location.xml",
