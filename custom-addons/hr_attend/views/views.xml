@@ -1,52 +1,39 @@
 <odoo>
   <data>
-    <record id="view_hr_job_form_ext" model="ir.ui.view">
-      <field name="name">hr.job.form.ext</field>
-      <field name="model">hr.job</field>
-      <field name="inherit_id" ref="hr.view_hr_job_form"/>
+    <record id="view_hr_attend_form" model="ir.ui.view">
+      <field name="name">hr.attend.form</field>
+      <field name="model">hr.attendance</field>
+      <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
       <field name="arch" type="xml">
-<<<<<<< HEAD
-          <field name="department_id" domain="[('parent_id', '=', department_id)]" position="replace" />
-=======
-          <xpath expr="//field[@name='department_id']" position="after">
-            <field name="section" />
+          <xpath expr="//field[@name='overtime_hours']" position="after">
+            <field name="overtime_fix_hours" />
+            <field name="overtime_shift_hours" />
+            <field name="ot_total_hours" />
           </xpath>
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
-          <xpath expr="//page[@name='recruitment_page']" position="after">
-            <page string="Job Information" name="job_description_page">
-              <group>
-              <group>
-                <field name="cost_center"/>
-                <field name="classification"/>
-                <field name="grade"/>
-                <field name="level"/>
-                <field name="level_hcs"/> 
-              </group>
-              </group>
-            </page>
-          </xpath>
+          
       </field>
   </record>
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="hr_job_ext.action_window">
+    <!-- <record model="ir.actions.act_window" id="hr_job_ext.action_window">
       <field name="name">hr_job_ext window</field>
       <field name="res_model">hr.job</field>
       <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="hr_job_ext.list">
-      <field name="name">hr_job_ext list</field>
-      <field name="model">hr_job_ext.hr_job_ext</field>
+
+    <!-- <record model="ir.ui.view" id="hr_attend.list">
+      <field name="name">hr_attenddance_list</field>
+      <field name="model">hr.attendance</field>
+      <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="overtime_fix_hours"/>
+          <field name="overtime_shift_hours"/>
+          <field name="ot_total_hours" />
         </tree>
       </field>
-    </record>
--->
+    </record> -->
+
 
 
 

@@ -9,12 +9,17 @@
       <field name="arch" type="xml">
           <xpath expr="//field[@name='mobile_phone']" position="before">
             <field name="nik" />
+<<<<<<< HEAD
+=======
+            <field name="nik_ktp" />
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </xpath>
           <xpath expr="//page[@name='personal_information']" position="after">
             <page name="family_information" string="Family Information" groups="hr.group_hr_user">
               <field name="family_ids" nolabel="1"/>
             </page>
           </xpath>
+<<<<<<< HEAD
           <xpath expr="//field[@name='children']" position="after">
             <field name="tgl_menikah" />
             <field name="tempat_menikah" />
@@ -39,12 +44,34 @@
                 </group>
                 <group string="Personal Information">
                     
+=======
+          <xpath expr="//page[@name='family_information']" position="after">
+            <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
+              <group>
+                <group string="Additional Information">
+                    <field name="npwp" />
+                    <field name="tgl_npwp" />
+                    <field name="tgl_expired_npwp" />
+                    <field name="no_bpjs" />
+                    <field name="no_bpjstk" />
+                    <field name="no_kk" />
+                    <field name="tgl_terbit_kk" />
+                    <field name="tgl_terbit_ktp" />
+                    <field name="tgl_expired_ktp" />
+                    <field name="gol_darah" />
+                    <field name="agama" />
+                </group>
+                <group string="Social Information">
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
                     <field name="tinggi_badan" />
                     <field name="berat_badan" />
                     <field name="uk_baju" />
                     <field name="uk_celana" />
                     <field name="uk_sepatu" />
+<<<<<<< HEAD
                     <separator name="has_social" string="Social Information"/>
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
                     <field name="tiktok" />
                     <field name="instagram" />
                     <field name="twitter" />
@@ -82,7 +109,11 @@
       <field name="model">hr.family</field>
       <field name="arch" type="xml">
           <form string="Family">
+<<<<<<< HEAD
               <sheet>                          
+=======
+              <sheet>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
                   <group>
                       <group>
                           <field name="nik" placeholder="3576447103910003" />
@@ -113,7 +144,11 @@
           </form>
       </field>
   </record>
+<<<<<<< HEAD
   <!-- <record id="hr_family_action" model="ir.actions.act_window">
+=======
+  <record id="hr_family_action" model="ir.actions.act_window">
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="name">Families</field>
             <field name="res_model">hr.family</field>
             <field name="view_mode">tree,form</field>
@@ -130,7 +165,11 @@
               action="hr_family_action"
               groups="hr.group_hr_user"
               parent="hr.menu_hr_employee_payroll"
+<<<<<<< HEAD
               sequence="4" /> -->
+=======
+              sequence="4" />
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 </data>
 
 </odoo>
