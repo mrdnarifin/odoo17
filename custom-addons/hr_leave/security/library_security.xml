@@ -1,0 +1,48 @@
+<odoo>
+
+  <data>
+  <!-- HR Grade User Group -->
+  <record id="hr_grade_group_user" model="res.groups">
+    <field name="name">User</field>
+    <field name="category_id"
+           ref="base.module_category_human_resources_employee_grade"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+  </record>
+
+  <!-- HR Manager Group -->
+  <record id="hr_grade_manager" model="res.groups">
+    <field name="name">Manager</field>
+    <field name="category_id"
+           ref="base.module_category_human_resources_employee_grade"/>
+    <field name="implied_ids"
+           eval="[(4, ref('hr_grade_group_user'))]"/>
+    <field name="users"
+           eval="[(4, ref('base.user_root')),
+                  (4, ref('base.user_admin'))]"/>
+  </record>
+
+   <!-- HR Grade User Group -->
+  <record id="hr_level_group_user" model="res.groups">
+    <field name="name">User</field>
+    <field name="category_id"
+           ref="base.module_category_human_resources_employee_level"/>
+    <field name="implied_ids"
+           eval="[(4, ref('base.group_user'))]"/>
+  </record>
+
+  <!-- HR Manager Group -->
+  <record id="hr_level_manager" model="res.groups">
+    <field name="name">Manager</field>
+    <field name="category_id"
+           ref="base.module_category_human_resources_employee_level"/>
+    <field name="implied_ids"
+           eval="[(4, ref('hr_grade_group_user'))]"/>
+    <field name="users"
+           eval="[(4, ref('base.user_root')),
+                  (4, ref('base.user_admin'))]"/>
+  </record>
+
+  </data>
+
+</odoo>
