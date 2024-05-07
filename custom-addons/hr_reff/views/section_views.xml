@@ -13,7 +13,15 @@
             </field>
         </record>
         <record id="hr_section_form_view" model="ir.ui.view">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field  name="name">.view.form</field>
+=======
+            <field name="name">.view.form</field>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+            <field name="name">.view.form</field>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="model">hr.section</field>
             <field name="arch" type="xml">
                 <form string="Section">
@@ -33,7 +41,13 @@
         <record id="hr_section_action" model="ir.actions.act_window">
             <field name="name">Section</field>
             <field name="res_model">hr.section</field>
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field name="context">{'group_by':'parent_id'}</field>
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">

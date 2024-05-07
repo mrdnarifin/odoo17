@@ -4,15 +4,30 @@
             <field name="name">BOD</field>
           </record>
           <record id="dep1" model="hr.department">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">Project &amp; Infrastructure</field>
           </record>
           <record id="dep2" model="hr.department">
             <field name="name">Port Data Center</field>
+=======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+            <field name="name">PROJECT &amp; INFRASTRUCTURE</field>
+          </record>
+          <record id="dep2" model="hr.department">
+            <field name="name">PORT DATA CENTER</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
           <record id="dep3" model="hr.department">
             <field name="name">KUD GM</field>
           </record>
           <record id="dep4" model="hr.department">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">Mobile Plant</field>
           </record>
           <record id="dep5" model="hr.department">
@@ -29,12 +44,43 @@
           </record>
           <record id="dep9" model="hr.department">
             <field name="name">Jhonlin Security Service</field>
+=======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+            <field name="name">MOBILE PLANT</field>
+          </record>
+          <record id="dep5" model="hr.department">
+            <field name="name">FIXED PLANT</field>
+          </record>
+          <record id="dep6" model="hr.department">
+            <field name="name">POWER PLANT</field>
+          </record>
+          <record id="dep7" model="hr.department">
+            <field name="name">FAT &amp; LEGAL</field>
+          </record>
+          <record id="dep8" model="hr.department">
+            <field name="name">PORT OPERATION</field>
+          </record>
+          <record id="dep9" model="hr.department">
+            <field name="name">JHONLIN SECURITY SERVICE</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
           <record id="dep10" model="hr.department">
             <field name="name">SHE</field>
           </record>
           <record id="dep11" model="hr.department">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">HRGA &amp; Warehouse</field>
+=======
+            <field name="name">HRGA &amp; WAREHOUSE</field>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+            <field name="name">HRGA &amp; WAREHOUSE</field>
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
     </data>
 </odoo>

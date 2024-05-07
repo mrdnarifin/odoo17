@@ -1,6 +1,8 @@
 <odoo>
     <data noupdate="1">
           <record id="cost0" model="hr.cost_center">
+<<<<<<< HEAD
+<<<<<<< HEAD
             <field name="name">BUP Batu Ampar</field>
             <field name="description">BUP Batu Ampar</field>
           </record>
@@ -59,6 +61,71 @@
           <record id="cost14" model="hr.cost_center">
             <field name="name">Power Plant 3,5 MW</field>
             <field name="description">Power Plant 3,5 MW</field>
+=======
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+            <field name="name">BUP BATU AMPAR</field>
+            <field name="description">BUP BATU AMPAR</field>
+          </record>
+          <record id="cost1" model="hr.cost_center">
+            <field name="name">PROJECT TERPADU</field>
+            <field name="description">PROJECT TERPADU</field>
+          </record>
+          <record id="cost2" model="hr.cost_center">
+            <field name="name">PROJECT BATU ENGAU</field>
+            <field name="description">PROJECT BATU ENGAU</field>
+          </record>
+          <record id="cost3" model="hr.cost_center">
+            <field name="name">TERSUS SERONGGA</field>
+            <field name="description">TERSUS SERONGGA</field>
+          </record>
+          <record id="cost4" model="hr.cost_center">
+            <field name="name">PROJECT PEMBANGKIT 2X5 MW</field>
+            <field name="description">PROJECT PEMBANGKIT 2X5 MW</field>
+          </record>
+          <record id="cost5" model="hr.cost_center">
+            <field name="name">HEAD OFFICE</field>
+            <field name="description">HEAD OFFICE</field>
+          </record>
+          <record id="cost6" model="hr.cost_center">
+            <field name="name">POWER PLANT 6 MW</field>
+            <field name="description">POWER PLANT 6 MW</field>
+          </record>
+          <record id="cost7" model="hr.cost_center">
+            <field name="name">BUP BATU AMPAR</field>
+            <field name="description">BUP BATU AMPAR</field>
+          </record>
+          <record id="cost8" model="hr.cost_center">
+            <field name="name">JAKARTA</field>
+            <field name="description">JAKARTA</field>
+          </record>
+          <record id="cost9" model="hr.cost_center">
+            <field name="name">PROJECT BATU PUTIH</field>
+            <field name="description">PROJECT BATU PUTIH</field>
+          </record>
+          <record id="cost10" model="hr.cost_center">
+            <field name="name">TERSUS BUNATI</field>
+            <field name="description">TERSUS BUNATI</field>
+          </record>
+          <record id="cost11" model="hr.cost_center">
+            <field name="name">POWER PLANT 15 MW</field>
+            <field name="description">POWER PLANT 15 MW</field>
+          </record>
+          <record id="cost12" model="hr.cost_center">
+            <field name="name">TERSUS BATU AMPAR</field>
+            <field name="description">TERSUS BATU AMPAR</field>
+          </record>
+          <record id="cost13" model="hr.cost_center">
+            <field name="name">TERSUS SUNGAI DUA</field>
+            <field name="description">TERSUS SUNGAI DUA</field>
+          </record>
+          <record id="cost14" model="hr.cost_center">
+            <field name="name">POWER PLANT 3,5 MW</field>
+            <field name="description">POWER PLANT 3,5 MW</field>
+<<<<<<< HEAD
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
+=======
+>>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
           </record>
           
     </data>
