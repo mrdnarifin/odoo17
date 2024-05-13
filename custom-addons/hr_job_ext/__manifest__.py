@@ -8,26 +8,13 @@
     "version": "0.1",
     "license": "LGPL-3",
     # any module necessary for this one to work correctly
-<<<<<<< HEAD
-<<<<<<< HEAD
     "depends": ["hr", "hr_recruitment"],
-=======
     "depends": ["hr", "hr_reff"],
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
-=======
-    "depends": ["hr", "hr_reff"],
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
     # always loaded
     "data": [
         # 'security/ir.model.access.csv',
         "views/views.xml",
         # "views/templates.xml",
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
     "application": False,
-=======
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
-=======
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
 }
