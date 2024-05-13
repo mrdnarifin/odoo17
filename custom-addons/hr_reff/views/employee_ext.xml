@@ -6,9 +6,11 @@
       <field name="model">hr.employee</field>
       <field name="inherit_id" ref="hr.view_employee_form" />
       <field name="arch" type="xml">
+           <xpath expr="//field[@name='work_phone']" position="before">
+          </xpath>
           <xpath expr="//field[@name='mobile_phone']" position="before">
+            <field name="emp_type" />
             <field name="nik" />
-            <field name="nik_ktp" />
           </xpath>
           <xpath expr="//page[@name='personal_information']" position="after">
             <page name="family_information" string="Family Information" groups="hr.group_hr_user">
@@ -19,7 +21,7 @@
             <field name="tgl_menikah" /> 
             <field name="tempat_menikah" />
           </xpath>   
-          <xpath expr="//page[@name='family_information']" position="before">
+          <xpath expr="//page[@name='family_information']" position="after">
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
                 <group string="Additional Information">
@@ -30,14 +32,6 @@
                     <field name="npwp" />
                     <field name="tgl_npwp" />
                     <field name="tgl_expired_npwp" />
-                </group>
-              </group>
-             </page>
-          </xpath>
-          <xpath expr="//page[@name='family_information']" position="after">
-            <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
-              <group>
-                <group string="Additional Information">
                     <field name="npwp" />
                     <field name="tgl_npwp" />
                     <field name="tgl_expired_npwp" />

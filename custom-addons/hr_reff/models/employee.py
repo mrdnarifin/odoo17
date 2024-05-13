@@ -4,11 +4,13 @@ from odoo import models, fields, api
 class HrEmployeePrivate(models.Model):
     _inherit = ["hr.employee"]
 
+    emp_type = fields.Many2one("hr.employee_type", "Employee Status")
     nik = fields.Char(string="NIK", required=False, compute="_compute_auto_nik")
     nik_ktp = fields.Char(
         string="NIK KTP",
         required=False,
     )
+
     family_ids = fields.One2many("hr.family", "employee_id")
     sims_ids = fields.One2many("hr.employee.sim", "employee_id")
 
