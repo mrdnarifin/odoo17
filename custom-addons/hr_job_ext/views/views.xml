@@ -5,10 +5,7 @@
       <field name="model">hr.job</field>
       <field name="inherit_id" ref="hr.view_hr_job_form"/>
       <field name="arch" type="xml">
-          <field name="department_id" domain="[('parent_id', '=', department_id)]" position="replace" />
-          <xpath expr="//field[@name='department_id']" position="after">
-            <field name="section" />
-          </xpath>
+          <!-- <field name="department_id" domain="[('parent_id', '=', department_id)]" position="replace" /> -->
           <xpath expr="//field[@name='department_id']" position="after">
             <field name="section" />
           </xpath>
@@ -47,10 +44,6 @@
       </field>
     </record>
 -->
-
-
-
-
     <!-- server action to the one above -->
 <!--
     <record model="ir.actions.server" id="hr_job_ext.action_server">
@@ -66,7 +59,6 @@
       </field>
     </record>
 -->
-
     <!-- Top menu item -->
 <!--
     <menuitem name="hr_job_ext" id="hr_job_ext.menu_root"/>
