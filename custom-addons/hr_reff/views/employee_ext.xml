@@ -4,7 +4,7 @@
   <record id="view_hr_base_ext_form" model="ir.ui.view">
       <field name="name">hr.base.ext.form</field>
       <field name="model">hr.employee</field>
-      <field name="inherit_id" ref="hr.view_employee_form"/>
+      <field name="inherit_id" ref="hr.view_employee_form" />
       <field name="arch" type="xml">
           <xpath expr="//field[@name='mobile_phone']" position="before">
             <field name="nik" />
@@ -16,9 +16,9 @@
             </page>
           </xpath>
           <xpath expr="//field[@name='children']" position="after">
-            <field name="tgl_menikah" />
+            <field name="tgl_menikah" /> 
             <field name="tempat_menikah" />
-          </xpath>
+          </xpath>   
           <xpath expr="//page[@name='family_information']" position="before">
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
@@ -30,14 +30,10 @@
                     <field name="npwp" />
                     <field name="tgl_npwp" />
                     <field name="tgl_expired_npwp" />
- 
-                    <field name="no_bpjs" />
-                    <field name="no_bpjstk" />
-                    <field name="no_kk" />
-                    <field name="gol_darah" />
-                    <field name="agama" />
                 </group>
-                <group string="Personal Information">
+              </group>
+             </page>
+          </xpath>
           <xpath expr="//page[@name='family_information']" position="after">
             <page name="additional_information" string="Additional Information" groups="hr.group_hr_user">
               <group>
@@ -48,9 +44,6 @@
                     <field name="no_bpjs" />
                     <field name="no_bpjstk" />
                     <field name="no_kk" />
-                    <field name="tgl_terbit_kk" />
-                    <field name="tgl_terbit_ktp" />
-                    <field name="tgl_expired_ktp" />
                     <field name="gol_darah" />
                     <field name="agama" />
                 </group>
@@ -99,8 +92,6 @@
       <field name="arch" type="xml">
           <form string="Family">
               <sheet>                          
-              <sheet>
-              <sheet>
                   <group>
                       <group>
                           <field name="nik" placeholder="3576447103910003" />
@@ -132,6 +123,8 @@
       </field>
   </record>
   <!-- <record id="hr_family_action" model="ir.actions.act_window">
+  <record id="hr_family_action" model="ir.actions.act_window">
+  <record id="hr_family_action" model="ir.actions.act_window">
             <field name="name">Families</field>
             <field name="res_model">hr.family</field>
             <field name="view_mode">tree,form</field>
@@ -141,7 +134,6 @@
                 </p>
             </field>
         </record>
-
         <menuitem
               id="menu_hr_family_tree"
               name="Families"
