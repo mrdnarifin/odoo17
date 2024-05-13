@@ -134,12 +134,12 @@ class HrEmployeePrivate(models.Model):
     twitter = fields.Char(string="Twitter", required=False)
     linkedin = fields.Char(string="Linkedin", required=False)
 
-    # @api.depends("nik_ktp")
+    @api.depends("emp_type")
     def _compute_auto_nik(self):
-        employee = self.env.cr.execute("SELECT nik, name, job_title from hr_employee")
-        employee = self.env.cr.fetchall()
-        for p in employee:
-            print(p)
+        # employee = self.env.cr.execute("SELECT nik, name, job_title from hr_employee")
+        # employee = self.env.cr.fetchall()
+        # for p in employee:
+        #     print(p)
         # for record in self:
         #     record.nik = "11218728171"
         pass
