@@ -5,7 +5,7 @@ class HrEmployeePrivate(models.Model):
     _inherit = ["hr.employee"]
 
     emp_type = fields.Many2one("hr.employee_type", "Employee Status")
-    nik = fields.Char(string="NIK", required=False, compute="_compute_auto_nik")
+    nik = fields.Char(string="NIK", required=False)
     nik_ktp = fields.Char(
         string="NIK KTP",
         required=False,
