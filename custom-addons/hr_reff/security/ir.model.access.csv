@@ -4,13 +4,5 @@ hr_reff.access_hr_level,access_hr_level,hr_reff.model_hr_level,base.group_user,1
 hr_reff.access_hr_classification,access_hr_classification,hr_reff.model_hr_classification,base.group_user,1,1,1,1
 hr_reff.access_hr_cost_center,access_hr_cost_center,hr_reff.model_hr_cost_center,base.group_user,1,1,1,1
 hr_reff.access_hr_section,access_hr_section,hr_reff.model_hr_section,base.group_user,1,1,1,1
-<<<<<<< HEAD
-<<<<<<< HEAD
 hr_reff.access_hr_family,access_hr_family,hr_reff.model_hr_family,base.group_user,1,1,1,1
 hr_reff.access_hr_employee_sim,access_hr_employee_sim,hr_reff.model_hr_employee_sim,base.group_user,1,1,1,1
-=======
-hr_reff.access_hr_family,access_hr_family,hr_reff.model_hr_family,base.group_user,1,1,1,1
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
-=======
-hr_reff.access_hr_family,access_hr_family,hr_reff.model_hr_family,base.group_user,1,1,1,1
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c

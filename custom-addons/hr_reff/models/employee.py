@@ -134,5 +134,10 @@ class HrEmployeePrivate(models.Model):
 
     # @api.depends("nik_ktp")
     def _compute_auto_nik(self):
-        for record in self:
-            record.nik = "11218728171"
+        employee = self.env.cr.execute("SELECT nik, name, job_title from hr_employee")
+        employee = self.env.cr.fetchall()
+        for p in employee:
+            print(p)
+        # for record in self:
+        #     record.nik = "11218728171"
+        pass

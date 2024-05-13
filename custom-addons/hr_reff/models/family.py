@@ -37,8 +37,6 @@ class Family(models.Model):
     no_bpjs = fields.Char(string="No. BPJS", required=True)
     kode_faskes1 = fields.Char(string="Kode Faskes 1", required=False)
     faskes1 = fields.Char(string="Faskes 1", required=False)
-<<<<<<< HEAD
-<<<<<<< HEAD
     kelas_rawat = fields.Selection(
         string="Kelas Rawat",
         selection=[
@@ -49,12 +47,6 @@ class Family(models.Model):
             ["III", "III"],
         ],
     )
-=======
-    kelas_rawat = fields.Char(string="Kelas Rawat", required=False)
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
-=======
-    kelas_rawat = fields.Char(string="Kelas Rawat", required=False)
->>>>>>> b6681da9ab923231ef213c4d6fb9b5b9ab04111c
     kode_faskes_gigi = fields.Char(string="Kode Faskes Dokter Gigi", required=False)
     faskes_gigi = fields.Char(string="Faskes Dokter Gigi", required=False)
     country_id = fields.Many2one(
