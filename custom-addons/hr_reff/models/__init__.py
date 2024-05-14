@@ -8,4 +8,4 @@ from . import section
 from . import employee
 from . import family
 from . import sim
-from . import employee_type
+from . import employee_status

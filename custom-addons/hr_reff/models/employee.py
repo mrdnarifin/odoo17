@@ -4,7 +4,7 @@ from odoo import models, fields, api
 class HrEmployeePrivate(models.Model):
     _inherit = ["hr.employee"]
 
-    emp_type = fields.Many2one("hr.employee_type", "Employee Status")
+    emp_status = fields.Many2one("hr.employee_status", "Employee Status")
     nik = fields.Char(string="NIK", required=False)
     nik_ktp = fields.Char(
         string="NIK KTP",
@@ -134,12 +134,9 @@ class HrEmployeePrivate(models.Model):
     twitter = fields.Char(string="Twitter", required=False)
     linkedin = fields.Char(string="Linkedin", required=False)
 
-    @api.depends("emp_type")
+    @api.depends("emp_status")
     def _compute_auto_nik(self):
         # employee = self.env.cr.execute("SELECT nik, name, job_title from hr_employee")
         # employee = self.env.cr.fetchall()
-        # for p in employee:
-        #     print(p)
-        # for record in self:
-        #     record.nik = "11218728171"
-        pass
+        for record in self:
+            print(record)

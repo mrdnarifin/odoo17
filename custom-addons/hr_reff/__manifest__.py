@@ -13,7 +13,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/grade_views.xml",
-        "views/employee_type_views.xml",
+        "views/employee_status_views.xml",
         "views/level_views.xml",
         "views/classification_views.xml",
         "views/cost_center_views.xml",
@@ -26,8 +26,6 @@
         "data/cost_center.xml",
         "data/work_location.xml",
         "data/section.xml",
-        "data/department.xml",
-        "data/work_location.xml",
         "data/department.xml",
         "data/work_location.xml",
     ],

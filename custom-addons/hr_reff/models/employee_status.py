@@ -3,8 +3,8 @@
 from odoo import models, fields
 
 
-class EmployeeType(models.Model):
-    _name = "hr.employee_type"
+class EmployeeStatus(models.Model):
+    _name = "hr.employee_status"
     _description = "Employee Status"
 
     seq = fields.Char(string="Sequence")

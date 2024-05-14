@@ -9,7 +9,7 @@
            <xpath expr="//field[@name='work_phone']" position="before">
           </xpath>
           <xpath expr="//field[@name='mobile_phone']" position="before">
-            <field name="emp_type" />
+            <field name="emp_status" />
             <field name="nik" />
           </xpath>
           <xpath expr="//page[@name='personal_information']" position="after">

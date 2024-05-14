@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <record id="hr_employee_type_tree_view" model="ir.ui.view">
-            <field name="name">hr.employee_type.view.tree</field>
-            <field name="model">hr.employee_type</field>
+        <record id="hr_employee_status_tree_view" model="ir.ui.view">
+            <field name="name">hr.employee_status.view.tree</field>
+            <field name="model">hr.employee_status</field>
             <field name="arch" type="xml">
                 <tree string="Employee Status">
                     <field name="seq" />
@@ -11,9 +11,9 @@
                 </tree>
             </field>
         </record>
-        <record id="hr_employee_type_form_view" model="ir.ui.view">
-            <field name="name">hr.employee_type.view.form</field>
-            <field name="model">hr.employee_type</field>
+        <record id="hr_employee_status_form_view" model="ir.ui.view">
+            <field name="name">hr.employee_status.view.form</field>
+            <field name="model">hr.employee_status</field>
             <field name="arch" type="xml">
                 <form string="Employee Status">
                     <sheet>
@@ -28,9 +28,9 @@
                 </form>
             </field>
         </record>
-        <record id="hr_employee_type_action" model="ir.actions.act_window">
+        <record id="hr_employee_status_action" model="ir.actions.act_window">
             <field name="name">Employee Status</field>
-            <field name="res_model">hr.employee_type</field>
+            <field name="res_model">hr.employee_status</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
@@ -40,9 +40,9 @@
         </record>
 
         <menuitem
-              id="menu_hr_employee_type_tree"
+              id="menu_hr_employee_status_tree"
               name="Employee Status"
-              action="hr_employee_type_action"
+              action="hr_employee_status_action"
               parent="hr.menu_config_employee"
               sequence="9" />
     </data>
